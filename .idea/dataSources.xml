@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://ep-odd-river-a1hws0kl-pooler.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="vdkpatlb@rain.db.elephantsql.com" uuid="a8f91332-7016-49c3-98fc-eb3a481164b0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://rain.db.elephantsql.com:5432/vdkpatlb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
