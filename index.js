@@ -1,8 +1,8 @@
 import express from 'express';
-import pool from "../db/index.js";
+import pool from "./db/index.js";
 import { response} from "express";
 import bodyParser from "express";
-import query from "../queries.js";
+import query from "./queries.js";
 
 const port = 1507;
 const app = express()
