@@ -3,6 +3,7 @@ import pool from "./db/index.js";
 import { response} from "express";
 import bodyParser from "express";
 import query from "./queries.js";
+import cors from "cors";
 
 const port = 1507;
 const app = express()
@@ -12,6 +13,7 @@ app.use(
         extended: true,
     })
 )
+app.use(cors())
 app.get('/', (request, response) => {
     response.json({ info: 'Node.js, Express, and Postgres API' })
 })
