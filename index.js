@@ -19,8 +19,10 @@ app.get('/', (request, response) => {
 })
 
 app.get('/provinces', query.getAllProvinces)
-app.get('/districts/:id', query.getDistrictInProvince)
-app.get('/wards/:id', query.getWardInDistrict)
+app.get('/districts/:id', query.getDistrictInProvinceByID)
+app.get('/districts', query.getDistrictInProvinceByProvinceName)
+app.get('/wards/:id', query.getWardInDistrictByID)
+app.get('/wards', query.getWardInDistrictByDistrictName)
 
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
