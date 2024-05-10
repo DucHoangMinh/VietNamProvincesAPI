@@ -63,7 +63,7 @@ const migrateData = async () => {
     // await pool.query(query)
     // console.log('Finish migrate district list')
 
-    //=====INSERT INTO WARD TABLE=====
+    // =====INSERT INTO WARD TABLE=====
     await Promise.all(province_list.map(async (item) => {
         await getDistricts(item.province_id)
     }))

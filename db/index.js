@@ -1,13 +1,11 @@
 import pg from 'pg'
 const pool = new pg.Pool({
-    user: 'default',
-    host: 'ep-odd-river-a1hws0kl-pooler.ap-southeast-1.postgres.vercel-storage.com',
-    database: 'verceldb',
-    password: 'tTBkXq7eOQS2',
+    user: 'user',
+    host: '127.0.0.1',
+    database: 'default',
+    password: 'password',
     port: 5432,
-    ssl: {
-        rejectUnauthorized: false
-    },
+    ssl: false,
     sslmode: 'require'
 })
 
